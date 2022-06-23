@@ -19,6 +19,7 @@
     "cleanApi": "cd packages/api && rm -rf node_modules",
     "cleanTurbo": "rm -rf node_modules yarn.lock",
     "clean": "yarn cleanNative && yarn cleanWeb && yarn cleanDocs && yarn cleanSuper && yarn cleanUi && yarn cleanEslint && yarn cleanApi && yarn cleanTurbo",
+    "clean-install": "yarn clean && yarn install",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",

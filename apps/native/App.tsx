@@ -5,7 +5,6 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import superjson from "superjson";
 import { HelloWorld } from "./components/helloWorld";
 import { transformer, trpc } from "./utils/trpc";
-
 const data = {
   createdAt: new Date(),
   id: 1,
