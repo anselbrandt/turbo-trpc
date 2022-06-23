@@ -7,6 +7,9 @@
     "packages/*"
   ],
   "scripts": {
+    "gen": "prisma generate",
+    "push": "prisma db push",
+    "studio": "prisma studio",
     "cleanNative": "cd apps/native && rm -rf .expo .turbo node_modules",
     "cleanWeb": "cd apps/web && rm -rf .next .turbo node_modules",
     "cleanDocs": "cd apps/docs && rm -rf .next .turbo node_modules",
@@ -19,17 +22,21 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "prisma generate"
   },
   "devDependencies": {
     "eslint-config-custom": "latest",
     "prettier": "latest",
+    "prisma": "^3.15.2",
     "turbo": "latest"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@prisma/client": "^3.15.2"
+  },
   "packageManager": "yarn@1.23.0-20220130.1630"
 }
