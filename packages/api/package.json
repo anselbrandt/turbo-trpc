@@ -1,0 +1,17 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@trpc/client": "^9.25.3",
+    "@trpc/react": "^9.25.3",
+    "@trpc/server": "^9.25.3",
+    "superjson": "*",
+    "zod": "^3.17.3"
+  }
+}

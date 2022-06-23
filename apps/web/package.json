@@ -9,19 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "superjson": "*",
+    "@trpc/client": "^9.25.3",
+    "@trpc/next": "^9.25.3",
+    "@trpc/react": "^9.25.3",
+    "@trpc/server": "^9.25.3",
     "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "ui": "*"
+    "react-query": "^3.39.1",
+    "superjson": "*",
+    "ui": "*",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
+    "@types/node": "^17.0.12",
+    "@types/react": "17.0.37",
     "eslint": "7.32.0",
     "eslint-config-custom": "*",
     "next-transpile-modules": "9.0.0",
     "tsconfig": "*",
-    "@types/node": "^17.0.12",
-    "@types/react": "17.0.37",
     "typescript": "^4.5.3"
   }
 }
