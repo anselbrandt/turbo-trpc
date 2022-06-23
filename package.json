@@ -7,6 +7,12 @@
     "packages/*"
   ],
   "scripts": {
+    "cleanWeb": "cd apps/web && rm -rf .next .turbo node_modules",
+    "cleanDocs": "cd apps/web && rm -rf .next .turbo node_modules",
+    "cleanSuper": "cd apps/web && rm -rf node_modules",
+    "cleanUi": "cd apps/web && rm -rf node_modules",
+    "cleanTurbo": "rm -rf node_modules yarn.lock",
+    "clean": "yarn cleanWeb && yarn cleanDocs && yarn cleanSuper && yarn cleanUi && yarn cleanTurbo",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
