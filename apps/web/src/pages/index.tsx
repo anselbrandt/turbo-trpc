@@ -6,6 +6,19 @@ import { SuperJSONResult } from "superjson/src/types";
 import { Button } from "ui";
 import { trpc } from "../utils/trpc";
 
+const TrpcNotes: NextPage = () => {
+  const { data: notes } = trpc.useQuery(["notes.getAll"]);
+  if (!notes) return null;
+  return (
+    <div>
+      <h2>prisma over tRPC:</h2>
+      {notes.map((note: Note) => (
+        <div key={note.id}>{note.content}</div>
+      ))}
+    </div>
+  );
+};
+
 const user = {
   createdAt: new Date(),
   id: 1,
@@ -49,6 +62,7 @@ const Web: NextPage<Props> = ({ data }) => {
       <h2>{hello && hello.data && hello.data.greeting}</h2>
       <h2>prisma:</h2>
       <Notes data={data} />
+      <TrpcNotes />
     </div>
   );
 };

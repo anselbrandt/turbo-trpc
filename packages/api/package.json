@@ -11,6 +11,7 @@
     "@trpc/client": "^9.25.3",
     "@trpc/react": "^9.25.3",
     "@trpc/server": "^9.25.3",
+    "db": "*",
     "superjson": "*",
     "zod": "^3.17.3"
   }
