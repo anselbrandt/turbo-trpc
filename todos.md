@@ -6,12 +6,26 @@
 
   - [ ] Resolve [superjson/issues/190](https://github.com/blitz-js/superjson/issues/190) and [copy-anything/issues/14](https://github.com/mesqueeb/copy-anything/issues/14)
 
-  - [ ] Switch to superjson NPM package
+  - [ ] Switch to superjson NPM package?
 
 - [ ] Add react native web
 
 - [ ] Add tailwind
 
+  - [ ] tailwind-rn?
+
+  - [ ] dripsy?
+
 - [ ] Add nextra docs app
 
-- [ ] Dripsy?
+- [ ] Add next-auth to web app
+
+  - [ ] Native auth?
+
+- [ ] Add react-hook-form
+
+  - [ ] Native form handling?
+
+- [ ] Add local sqlite or docker mysql for dev
+
+- [ ] Add dockerfile/docker compose (prod/deployment only?)
