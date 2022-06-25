@@ -2,7 +2,7 @@
 
 - [ ] Remove hardcoded localhost in native app
 
-- [ ] Move package superjson types to /src to conform to NPM package
+- [ ] Move package superjson types to `dist/types` to conform to NPM package
 
 - [ ] Add react native web
 
