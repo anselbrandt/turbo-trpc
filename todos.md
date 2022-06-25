@@ -29,3 +29,7 @@
 - [ ] Add local sqlite or docker mysql for dev
 
 - [ ] Add dockerfile/docker compose (prod/deployment only?)
+
+- [ ] Add react-native-reanimated
+
+  - [ ] Moti?
