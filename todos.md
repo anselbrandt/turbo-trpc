@@ -1,6 +1,6 @@
 # Todos
 
-- [ ] Remove hardcoded localhost in native app
+- [x] Remove hardcoded localhost in native app
 
 - [ ] Move package superjson types to `dist/types` to conform to NPM package
 
