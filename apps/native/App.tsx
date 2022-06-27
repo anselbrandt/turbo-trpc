@@ -1,3 +1,4 @@
+import Constants from "expo-constants";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -5,6 +6,9 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import superjson from "superjson";
 import { HelloWorld } from "./components/helloWorld";
 import { transformer, trpc } from "./utils/trpc";
+
+const { manifest } = Constants;
+
 const data = {
   createdAt: new Date(),
   id: 1,
@@ -15,7 +19,7 @@ const data = {
 const str = superjson.stringify(data);
 const json = JSON.parse(str);
 
-const localhost = `http://localhost:3000`;
+const localhost = `http://${manifest.debuggerHost?.split(":").shift()}:3000`;
 
 export default function App() {
   const [queryClient] = useState(() => new QueryClient());
