@@ -2,7 +2,7 @@
   "name": "superjson",
   "version": "1.0.0",
   "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "types": "./dist/types.ts",
   "license": "MIT",
   "scripts": {},
   "devDependencies": {

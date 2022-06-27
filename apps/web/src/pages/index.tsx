@@ -2,7 +2,7 @@ import { Note } from "db";
 import prisma from "db/client";
 import { NextPage } from "next";
 import superjson from "superjson";
-import { SuperJSONResult } from "superjson/src/types";
+import { SuperJSONResult } from "superjson/dist/types";
 import { Button } from "ui";
 import { trpc } from "../utils/trpc";
 

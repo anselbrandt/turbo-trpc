@@ -2,11 +2,11 @@
 
 - [x] Remove hardcoded localhost in native app
 
-- [ ] Move package superjson types to `dist/types` to conform to NPM package
+- [x] Move package superjson types to `dist/types` to conform to NPM package
 
   - [ ] Resolve [superjson/issues/190](https://github.com/blitz-js/superjson/issues/190) and [copy-anything/issues/14](https://github.com/mesqueeb/copy-anything/issues/14)
 
-  - [ ] Switch to superjson NPM package?
+  - [x] Switch to superjson NPM package ^1.9.1
 
 - [ ] Add react native web
 

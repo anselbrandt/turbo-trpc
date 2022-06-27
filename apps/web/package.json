@@ -18,7 +18,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-query": "^3.39.1",
-    "superjson": "*",
+    "superjson": "^1.9.1",
     "ui": "*",
     "zod": "^3.17.3"
   },
